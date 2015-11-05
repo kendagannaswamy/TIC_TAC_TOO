@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title>Tic Tac Toe </title>
+    <link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="shortcut icon" href="image/favicon.ico">
+</head>
+
+<body>
+    <div id="pagewrap">
+        <header>
+            <div class="hit-the-floor">Tic-Tac-Toe</div>
+        </header>
+        <section id="content">
+            <h3>How To Play? </h3>
+            <div id="scrollbox">
+                <ul>
+                    <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+                    <br/>
+                    <li>You are X, your friend is O. Players take turns putting their marks in empty squares.</li>
+                    <br/>
+                    <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</li>
+                    <br/>
+                    <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie (cat-game).</li>
+                </ul>
+            </div>
+        </section>
+        <section id="middle">
+            <div id="box">
+                <h3><span id="player_name"></span> make your move <span id="player_mark"></span></h3> </br>
+            </div>
+            <div id="tile">
+            </div>
+            <div id="ask_restart" class="end_game">
+                <h2> Would you like to play again?</h2>
+                <button href="#" id="restart_game">Reset</button>
+            </div>
+            <!-- Game Messages -->
+        </section>
+        <aside id="sidebar">
+            <h2>Score Card</h2>
+            <div id="score">
+                <h2>  
+              Player 1 : <span id="player1_wins">0</span><br/> 
+              Player 2 : <span id="player2_wins">0</span><br/>
+              </h2>
+            </div>
+            <div>
+                <h2 id="winner" class="end_game">
+        And the winner is:<br/> <span id="winner_name"></span></h2></div>
+            <div>
+                <h2 id="cat" class="end_cat">
+            <sapn id="cat_game"></sapn>
+            </h2></div>
+        </aside>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js">
+    </script>
+</body>
+
+</html>
